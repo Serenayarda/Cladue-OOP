@@ -13,26 +13,27 @@ class Insan
   //double kesirli sayılıra tutmak için kullanılır 
   maas = 3.14;
 
-uyu() 
-{
-console.log("insan uyuyor");
-} 
-} // bitiş scope
+  uyu()
+  {
+    console.log("insan uyuyor");
+  }
 
-yasHesapla(dogumyili) 
-{ var bulundugumuzyil = new date().getFullYear();
-  var sonuc = bulundugumuzyil - dogumyili;
-  return sonuc;
-}  
+  yasHesapla(dogumyili) 
+  {
+    var bulundugumuzyil = new Date().getFullYear();
+    var sonuc = bulundugumuzyil - dogumyili;
+    return sonuc;
+  }
+} // bitiş scope
 
 
   //var = nesneadi  = new ClassAdi();  // nesne oluşturma
-var i = new Insan()
+var i = new Insan();
 i.adi = "hakan ";
 i.soyadi = "yılmaz";
 i.yas = 25;
 i.cinsiyet = true;
 i.uyu();
 i.yasHesapla(1998);
-vargelenyas = i.yasHesapla(1998);
-console.log("gelen yas: " + gelenyas);  
+var gelenyas = i.yasHesapla(1998);
+console.log("gelen yas: " + gelenyas);
